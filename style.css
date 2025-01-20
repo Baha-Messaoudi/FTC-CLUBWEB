@@ -1,0 +1,1273 @@
+@font-face {
+    font-family: "TT Norms Pro";
+    font-style: normal;
+    src: local("TT Norms Pro"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff2") format("woff2"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff") format("woff"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.ttf") format("truetype");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+html{
+    scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #5e95ed;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(28, 94, 237) ,rgb(1, 29, 90) ) ;
+    border-radius: 10px;
+}
+header{
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+    height: 88px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 40px;
+    background: #2596be;
+    box-shadow: 3px 5px 5px rgb(42, 109, 243);
+    border-bottom: 1.5px solid blue;
+}
+nav .list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+nav .list a{
+    text-decoration: none;
+    color: #f9f8f8;
+    font-family: "TT Norms Pro";
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav .list a:hover{
+    color: #041c34;
+    border-bottom: .5px solid rgb(55, 114, 243);
+    letter-spacing: 0.3px;
+}
+.join{ 
+    border: 1.5px solid #2596be;
+    border-radius: 15px;
+    margin-right:-14%;
+}
+.join button{
+    text-align: center;
+    width: 100px;
+    height: 33px;
+    background-color:#2596be ;
+    border-radius:15px;
+    border: 2px solid rgb(252, 252, 253);
+    color: white;
+    font-family: "TT Norms Pro";
+    font-size: 18px;
+    font-weight: 800;
+}
+.join button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    filter: drop-shadow(3px 3px 4px rgb(42, 109, 243));
+}
+/*----------------------------------------------------------------home-----------------------------------------------------*/
+.home{
+    display: block;
+    background: #011325;
+    height:86vh;
+
+}
+
+
+section .background{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 75%;
+    margin-left: 12%;
+    min-height: 75vh;
+    background-image: url(./image/imagehome1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+    border: 3.5px solid #f7f7f7;;
+    display: none;
+}
+section  .background1{
+    background-image: url(./image/imghom2.jpg);
+}
+section  .background2{
+    background-image: url(./image/imhhome3.jpg);
+}
+section .active{
+    display: block;
+}
+
+section .titre{
+    display: flex;
+}
+section .text{
+    margin-top: 170px;
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(12, 2, 96);
+    width: 100%;
+    animation: typing 3s,
+    opacity linear 5s infinite;
+    filter: drop-shadow(5px 10px 7px rgb(22, 80, 242));
+}
+
+@keyframes typing{
+    from { width:0 }
+}
+@keyframes opacity{
+    0%,25%{opacity: 0%;}
+    25%,50%{opacity: 100%;}
+    50%,75%{opacity: 55%;}
+    75%,100%{opacity: 100%;}
+}
+section .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 50px;
+    cursor: pointer;
+}
+section .NEXT {
+    position: absolute;
+    right: 19%;
+    bottom:28%;
+    filter:drop-shadow(2px 1px 3px rgba(191, 194, 227, 0.402));
+}
+section .BACK{
+    position: absolute;
+    left: 17%;
+    bottom: 28%;
+    filter:drop-shadow(2px 1px 3px rgba(191, 194, 227, 0.402));
+}
+section .NEXT:hover,.BACK:hover{
+    scale: 1.1;
+}
+/*------------------------------------------------about------------------------------------------------------------------*/
+
+.about{
+    display: block;
+    background: #011325;
+    height:100%;
+}
+.title{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    color: white;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.difinition{
+    width: 44%;
+    height: 350px;
+    border: 3px solid #34b0dc;
+    border-radius:11px;
+    background-color: white;
+}
+section .swiper-slide1{
+    position: absolute;
+    width: 44%;
+    height: 350px;
+}
+.swiper-slide1 button{
+    border: none;
+    background: none;
+}
+.NEXT1 {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    cursor: pointer;
+}
+
+.BACK1 {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    cursor: pointer;
+}
+.BACK1:hover,.NEXT1:hover{
+    scale: 1.3;
+}
+section .question-reponse{
+    width: 65%;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+    margin-right: auto;
+    margin-top: 8%;
+}
+section .qna{
+    transform: translateX(160%);
+}
+section .qst1,.qst2,.qst3,.qst4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "TT Norms Pro";
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    transition: transform 0.5s ease-in-out;
+    color: #34b0dc;
+}
+.qst2{
+    position: absolute;
+    top: 0;
+}
+.qst3,.qst4{
+    position: absolute;
+    top: 0;
+    left: 10.5%;
+}
+section .rps1,.rps2,.rps3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "TT Norms Pro";
+    text-align: center;
+    height: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #34b0dc;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rps3{
+    text-align: start;
+}
+
+.rps4{
+    position: absolute;
+    top: 0;
+    font-family: "TT Norms Pro";
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline;
+    color: #34b0dc;
+}
+.rps4 img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+    margin-right: auto;
+    height: 10%;
+}
+.qna.show{
+    transform: translateX(0%);
+}
+
+.departement{
+    padding: 40px;
+}
+.t-departement{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 35px 30px;
+}
+
+.IA,.IT,.DEV,.DESIGN,.CS,.MK{
+    border: 1.5px solid rgb(29, 87, 244);
+    border-radius: 10px;
+    padding: 8px;
+    background-color: white;
+    filter: drop-shadow(4px 8px 6px #1989f299);
+}
+.IT:hover,.IA:hover,.DEV:hover,.DESIGN:hover,.CS:hover,.MK:hover{
+    scale: 1.03;
+    filter: drop-shadow(4px 8px 6px #a6a7a899);
+    cursor: pointer;
+    border:2.5px dotted #049ccc;
+}
+.IA img,.DESIGN img,.DEV img,.MK img,.IT img,.CS img{
+    position: absolute;
+    top:9px;
+    left: 9px;
+    transform: scale(1.5);
+    background: transparent;
+    padding: 2px;
+}
+.t-departement h1{
+    font-family: "TT Norms Pro";
+    font-size: 21px;
+    font-weight: 450;
+    padding: 8px;
+    color: #0337a8;
+    cursor: pointer;
+    margin-left: 45px;
+}    
+.t-departement h1:hover{
+    text-decoration: underline;
+}
+.t-departement p{
+    font-family: "TT Norms Pro";
+    font-size: 17px;
+    padding: 8px;
+    line-height: 0.7cm;
+    padding-top: 8px;
+}
+
+
+
+
+
+
+/*----------------------------------------------------events----------------------------------------------------*/
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+section .activities{
+    background: #011325;
+    height:100%;
+    margin-top: -0.3%;
+}
+section .activities h1{
+    text-align: center;
+    font-size: 39px;
+    font-family: "TT Norms Pro";
+    font-weight: 600;
+    color: white;
+    padding: 18px;
+}
+section .activities h3{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 33px;
+    font-weight: 500;
+    color: #2d4350;
+    text-shadow: 0px 0px 0.5px white;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+.totalcard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 40px 10px 40px 40px;
+    margin-left: 4%;
+}
+.card{
+    width: 75%;
+    height: 80%;
+    background: #121d31;
+    border: 1.5px solid #26536a;
+    border-radius: 3px;
+}
+div .height{
+    height: 43%;
+}
+div .height img{
+    width: 95%;
+    height: 95%;
+    margin: 5px;
+    margin-left: 2.5%;
+    border: 1.5px solid #4261a1;
+    border-radius:6px;
+}
+div .height img{
+    width: 95%;
+    height: 95%;
+    margin: 5px;
+    margin-left: 2.5%;
+    border: 1.5px solid #4261a1;
+    border-radius:6px;
+}
+div .bottom {
+    height: 57%;
+    padding: 14px 0px 0px 14px;
+}
+div .bottom h4{
+    font-size: 20px;
+    color: white;
+    font-family: "TT Norms Pro";
+}
+div .bottom span{
+    font-size: 16px;
+    color: #1b749e;
+    font-family: "TT Norms Pro";
+}
+div .bottom h5{
+    font-size: 18px;
+    color: #1b749e;
+    line-height: 0.7cm;
+    font-family: "TT Norms Pro";
+}
+div .bottom p{
+    font-size: 14px;
+    color: white;
+    line-height: 0.7cm;
+}
+.card:hover{
+    scale: 0.96;
+    filter: drop-shadow(4px 4px 10px #a6a7a899);
+}
+
+.next123,.back123{
+    display: none;
+}
+
+/*--------------------------------------------memeber-------------------------------------*/
+.member{
+    display: block;
+    background: #011325;
+    height:100%;
+}
+.member h1{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    color: white;
+}
+.member h3{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 33px;
+    font-weight: 500;
+    color: #2d4350;
+    text-shadow: 0px 0px 0.5px white;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.membertotal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.swiper-slide2{
+    position: absolute;
+    width: 44%;
+    height: 350px;
+    z-index: 99999;
+}
+
+.swiper-slide2 button{
+    border: none;
+    background: none;
+}
+.NEXT2 {
+    position: absolute;
+    right: -16%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.BACK2 {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    cursor: pointer;
+}
+.card-identifi{
+    width: 55%;
+    margin-right: 10%;
+}
+.card-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.card1{
+    background: #152228;
+    border: 1.5px solid #26536a;
+    border-radius: 3px;
+    height: auto;
+}
+div .card1-height{
+    height: 40%;
+}
+div .card1-height img{
+    width: 75%;
+    height: 75%;
+    margin: 5%;
+    margin-left: 12.5%;
+    border: 1.5px solid #4261a1;
+    border-radius:50%;
+}
+div .card1-middle{
+    height: 30%;
+}
+div .card1-middle p{
+    font-size: 14px;
+    color: white;
+    line-height: 0.5cm;
+    padding: 0px 10px;
+}
+div .card1-bottom{
+    height: 10%;
+    padding-top: 5px;
+}
+div .card1-bottom img{
+    background:#152228 ;
+    margin-left: 35%;
+}
+div .card1-bottom img:hover{
+    scale: 1.2;
+}
+.card-s{
+    scale: 1.15;
+    width: 75%;
+    height: 50%;
+    z-index: 2;
+}
+.card-ns{
+    scale: 0.8;
+    width: 75%;
+    height: 50%;
+}
+.card-ns1{
+    scale: 0.8;
+    width: 75%;
+    height: 50%;
+}
+.titre-identifei{
+    margin: auto;
+    margin-right: auto;
+}
+.center h1{
+    font-size: 35px;
+    scale: 1.1;
+    letter-spacing: 2px;
+    font-family: "TT Norms Pro";
+    color: white;
+    text-shadow: 3px 3px 9px #2d4350;
+}
+.no-center h1{
+    font-size: 25px;
+    scale: 0.9;
+    font-family:"TT Norms Pro" ;
+    color: #2d4350;
+    text-shadow: 3px 3px 9px white,;
+}
+/*-------------------------------------------------contactus---------------------------------*/
+.contact-us{
+    background: #011325;
+    height:100%;
+}
+.contact-us h1{
+    text-align: center;
+    font-size: 39px;
+    font-family: "TT Norms Pro";
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+}
+.contact-us h3{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 33px;
+    font-weight: 500;
+    color: #2d4350;
+    text-shadow: 0px 0px 0.5px white;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.form{
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.naame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.firstname,.lastname{
+    width: 50%;
+}
+form span{
+    font-family: "TT Norms Pro";
+    font-size: 17px;
+    color: white;
+}
+.firstname,.lastname,.addres,.message{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form input{
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+.message textarea{
+    height: 100px;
+    resize: none;
+}
+.message textarea:focus{
+    border: none;
+    outline: none;
+}
+:placeholder-shown{
+    padding: 3px;
+}
+.send input{
+    width: 100%;
+    background-color: #0699cf;
+    font-family: "TT Norms Pro";
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+.send input:hover{
+    background-color: green;
+    scale: 1.003;
+}
+
+
+footer{
+    background: #011325;
+}
+.footer{
+    padding: 30px;
+    height: auto;
+    margin: auto;
+    margin-right: auto;
+}
+footer .ourcommunity{
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .ourcommunity h1{
+    font-family: "TT Norms Pro";
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 10px 0px;
+}
+footer .ourcommunity h4{
+    text-align: center;
+    font-family: "TT Norms Pro";
+    font-size: 23px;
+    font-weight: 700;
+    color:#2596be;
+    text-shadow: 0px 0px 3px #cce0df;
+    letter-spacing: 4px;
+}
+footer .s-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 15px 0px;
+}
+.imglogo img{
+    width:35% ;
+    margin-left: 32%;
+}
+.lien{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    margin-left: auto;
+}
+.lien a{
+    text-decoration: none;
+    color: #dde4ea;
+    font-family: "TT Norms Pro";
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.lien a:hover{
+    border-bottom: 1px solid #3d4f59;
+}
+.border{
+    width: 60%;
+    border-bottom: 2px solid #3d4f59;
+    margin: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+}
+.me{
+    background: #011325;
+}
+.me h2{
+    font-size: 20px; 
+    text-align: center;
+    color: white;
+}
+.me h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*------------------------------responsive--------------------------------------------*/
+@media only screen and (min-width:1295px){
+    nav .list ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 40px !important;
+    }
+    nav .list a{
+        font-size: 27px !important;
+        font-weight: 700 !important;
+    }
+    .join{ 
+        border: 2px solid blue !important;
+        margin-right: -18% !important;
+    }
+    .join button{
+        width: 110px !important;
+        font-size: 21px !important;
+        font-weight: 800;
+    }
+    /*----------------home----------------*/
+    .title{
+        font-size: 41px !important;
+    }
+    section .text{
+        margin-top: 260px !important;
+    }
+    section .NEXT {
+        bottom:40% !important;
+    }
+    section .BACK{
+        bottom: 40% !important;
+    }
+    /*----------------------about-------------------*/
+    .difinition{
+        height: 450px !important;
+    }
+    section .question-reponse{
+        width: 70% !important;
+        height: 350px !important;
+    }
+    .NEXT1 {
+        top: 50% !important;
+    }
+    
+    .BACK1 {
+        top: 50% !important;
+    }
+    .rps4 img{
+        height: 7% !important;
+    }
+    section .qst1,.qst2,.qst3,.qst4{
+        font-size: 35px !important;
+        font-weight: 500 !important;
+    }
+    section .rps1,.rps2,.rps3{
+        font-size: 24px !important;
+        font-weight: 500 !important;
+    }
+    .rps4{
+        font-size: 24px !important;
+    }
+    .IA,.IT,.DEV,.DESIGN,.CS,.MK{
+        border: 2.5px solid rgb(29, 87, 244) !important;
+    }
+    .IT:hover,.IA:hover,.DEV:hover,.DESIGN:hover,.CS:hover,.MK:hover{
+        border:3px dotted #049ccc !important;
+    }
+    .t-departement h1{
+        font-size: 23px !important;
+        font-weight: 490 !important;
+    }
+    .t-departement p{
+        font-size: 19px !important;
+    }
+    section .activities h1{
+        font-size: 41px !important;
+    }
+    section .activities h3{
+        font-size: 35px !important;
+    }
+    .card{
+        border: 2.5px solid #26536a !important;
+    }
+    div .height img{
+        border: 2.2px solid #4261a1 !important;
+    }
+    div .bottom {
+        padding: 12px 0px 0px 12px !important;
+    }
+    div .bottom h4{
+        font-size: 23px !important;
+    }
+    div .bottom span{
+        font-size: 19px !important;
+    }
+    div .bottom h5{
+        font-size: 21px !important;
+    }
+    div .bottom p{
+        font-size: 17px !important;
+    }
+    /*-------------memeber-------------*/
+    .member h1{
+        font-size: 41px !important;
+    }
+    .member h3{
+        font-size: 35px !important;
+    }
+    div .card1-middle p{
+        font-size: 16px !important;
+    }
+    .center h1{
+        font-size: 37px !important;
+    }
+    /*--------------------contact-----------------*/
+    .contact-us h1{
+        font-size: 41px !important;
+    }
+    .contact-us h3{
+        font-size: 35px !important;
+    }
+    form span{
+        font-size: 19px !important;
+    }
+    .send input{
+        font-size: 16px !important;
+    }
+    /*-----------------foter----------*/
+    footer .ourcommunity h1{
+        font-size: 28px !important;
+    }
+    footer .ourcommunity h4{
+        font-size: 25px !important;
+        font-weight: 750;
+    }
+    .lien a{
+        font-size: 23px !important;
+        font-weight: 400 !important;
+    }
+}
+
+@media only screen and (max-width:1055px){
+    
+    .home{
+        height:46vh !important;
+    
+    }
+    section .background{
+        min-height: 35vh !important;
+    }
+    section .text{
+       visibility: hidden !important;
+    }
+    section .NEXT {
+        bottom:70% !important;
+    }
+    section .BACK{
+        bottom: 70% !important;
+    }
+    /*----------------about-------------*/
+    .difinition{
+        width: 50% !important;
+        height: 300px !important;
+    
+    }
+    section .swiper-slide1{
+        width: 50% !important;
+    }
+    .NEXT1 {
+        top: 32% !important;
+    }
+    
+    .BACK1 {
+        top: 32% !important;
+    }
+    section .qst1,.qst2,.qst3,.qst4{
+        font-size: 24px !important;
+    }
+    section .rps1,.rps2,.rps3{
+        font-size: 18px !important;
+        font-weight: 300 !important;
+    }
+    .t-departement{
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        gap: 35px 30px;
+    }
+    .IA,.IT,.DEV,.DESIGN,.CS,.MK{
+        border: 2.5px solid rgb(29, 87, 244) !important;
+    }
+    .IT:hover,.IA:hover,.DEV:hover,.DESIGN:hover,.CS:hover,.MK:hover{
+        border:3px dotted #049ccc !important;
+    }
+    .IA img,.DESIGN img,.DEV img,.MK img,.IT img,.CS img{
+        top:11px !important;
+        left: 11px !important;
+        transform: scale(1.3) !important;
+        padding: 4px !important;
+    }
+    .t-departement h1{
+        padding:  8px 10px !important;
+    }  
+    /*-------------------activities--------*/
+    .totalcard{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+    }
+    /*----------------memeber-------*/
+    .membertotal{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        gap: 20px !important;
+    }
+    .card-identifi{
+        width: 75%;
+        margin-right: 0% !important;
+    }
+    .NEXT2 {
+        left: 153%;
+    }
+    /*--------------------contact-----*/
+    .form{
+        width: 60% !important;
+    }
+    /*---footer---*/
+    footer .ourcommunity{
+        width: 60% ;
+    }
+    .lien{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 910px){
+    nav{
+        padding: 6px 25px;
+    }
+    nav .list ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+    nav .list a{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .join{ 
+        margin-right:-8%;
+    }
+    section .NEXT {
+        bottom:66% !important;
+    }
+    section .BACK{
+        bottom: 66% !important;
+    }
+    div .bottom p{
+        font-size: 13px;
+        line-height: 0.6cm;
+    }
+    .difinition{
+        width: 65% !important;
+    }
+    section .swiper-slide1{
+        width: 65% !important;
+    }
+    .card-identifi{
+        width: 85%;
+        margin-right: 0% !important;
+    }
+    .NEXT2 {
+        left: 169%;
+    }
+} 
+
+@media only screen and (max-width:600px){
+   header{
+    position: sticky !important;
+   }
+    nav .list ul {
+        flex-direction: column;
+        position: absolute;
+        background: #2596be;
+        padding: 20px;
+        top: 105%;
+        right: -100%;
+        width: 150px;
+        border-radius: 5px;
+        transition: .8s;
+    }
+    nav .showlist{
+        right: 0% !important;
+    }
+    .join{ 
+        margin-right:12%;
+    }
+    /*------home------*/
+    .home{
+        height:39vh !important;
+    }
+    section .background{
+        top: 110px !important;
+        width: 98% !important;
+        margin-left: 1%;
+        
+    }
+    section .NEXT {
+        right: 9%;
+    }
+    section .BACK{
+        left: 7%;
+    }
+     /*----------------about-------------*/
+     .difinition{
+        width: 80% !important;
+        height: 280px !important;
+    
+    }
+    section .swiper-slide1{
+        width: 80% !important;
+        height: 280px !important;
+    }
+    .NEXT1 {
+        top: 37% !important;
+    }
+    
+    .BACK1 {
+        top: 37% !important;
+    }
+    section .qst1,.qst2,.qst3,.qst4{
+        font-size: 20px !important;
+    }
+    section .rps1,.rps2,.rps3{
+        font-size: 14px !important;
+        font-weight: 300 !important;
+    }
+    .t-departement{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+    }
+    .response{
+        position: absolute;
+        z-index: 999999;
+        padding: 5px;
+        cursor: pointer;
+        width: 100%;
+        height: 100% ; 
+    }
+    .next123,.back123{
+        display: block !important;
+        position: absolute !important;
+        padding: 10px 5px;
+        width: 40px;
+    }
+    .back123{
+        left: -10% !important;
+        top: 35% !important;
+        height: 130px !important;
+        width: 130px !important;
+    }
+    .next123{
+        left: 75% !important;
+        top: 35% !important;
+        height:130px !important;
+        width: 130px !important;
+    }
+    .totalcard {
+        display: flex !important;
+        position: relative;
+        height: 550px !important;
+        margin-left: 5% !important;
+    }
+
+    .card {
+        flex: 0 0 100% !important; /* Chaque élément occupe toute la largeur */
+        transition: transform 0.6s ease !important;
+        position: absolute;
+        opacity: 0 !important;
+        visibility: hidden !important ;
+        height: 490px;
+    }
+    
+    .active12{
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateX(0);
+    }
+    
+    .card.active-prev {
+        transform: translateX(-100%);
+    }
+    
+    .card.active-next {
+        transform: translateX(100%);
+    }
+    /*------------------------memeber-----------------*/
+    .membertotal{
+        display: flex !important;
+        position: relative !important; 
+        justify-content: none !important;
+        width: 100% !important;
+        height: 550px !important;
+    }
+    .card-identifi{
+        width: 100% !important;
+        margin-right: 0% !important;
+    }
+    .swiper-slide2{
+        width: 84% !important;
+    }
+    .NEXT2 {
+        left: 90% !important;
+        top: 65% !important;
+    }
+    
+    .BACK2 {
+        left: 0% !important;
+        top: 65% !important; 
+    }
+    .card-b{
+        display: flex !important;
+    }
+    .card1{
+        flex: 0 0 100% !important; 
+        transition: transform 0.1s ease !important;
+    }
+    .card1-middle h2 {
+        text-align: center !important; 
+        padding: 0px 0px 6px 0px  !important;
+        color: white !important;
+    }
+    div .card1-middle p{
+        font-size: 16px !important;
+        padding: 4px 10px !important;
+    }
+    div .card1-bottom{
+        padding: 8px 0px !important;
+        margin-left: 30px !important;
+    }
+    .card-s{
+        visibility: visible !important;
+        scale: 1 !important;
+        width: 100% !important;
+        transform: translateX(-100%) !important;
+    }
+    .card-ns{
+        width: 100% !important;
+        visibility: hidden !important;
+        scale: 1 !important;
+    }
+    .card-ns1{
+        width: 100% !important;
+        visibility: hidden !important;
+        scale: 1 !important;
+        transform: translateX(-200%) !important;
+    }
+
+    .active-card{
+        visibility: visible !important;
+    }
+    .noactivecard{
+        visibility: hidden !important;
+    }
+    .titre-identifei{
+        display: none !important;
+    }
+
+    /*------------------------contact-------------*/
+    .form{
+        width: 90% !important;
+    }
+    .naame{
+        display: flex;
+        flex-direction: column !important;
+        gap: 7px;
+    }
+    .firstname,.lastname{
+        width: 100% !important;
+    }
+    /*---------------foter------*/
+    footer .ourcommunity{
+        width: 95% !important;
+    }
+    .imglogo img{
+        width:95% ;
+        margin-left: 2%;
+    }
+    .lien{
+        width: 100% !important;
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+    .border{
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "TT Norms Pro";
+    font-style: normal;
+    src: local("TT Norms Pro"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff2") format("woff2"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff") format("woff"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.ttf") format("truetype");
+}
+body{
+    display: block;
+    background: #011325;
+    height:100%;
+}
+h1{
+    font-family: "TT Norms Pro";
+    text-align: center;
+    color: white;
+}
+form{
+    border: 1.5px solid #2596be;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    margin-right:auto ;
+    filter: drop-shadow(4px 8px 6px #a6a7a899);
+    cursor: pointer;
+    background: white;
+    padding: 20px;
+}
+form h3{
+    font-family: "TT Norms Pro";
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+form input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+form textarea{
+    width: 80%;
+    border: 2px solid #2596be;
+    margin-left: 20px;
+}
+.all{
+    font-family: "TT Norms Pro";
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+}
+table{
+    border: 2px solid white;
+    margin: auto;
+    margin-right: auto;
+    width: 90%;
+}
+table th{
+    font-family: "TT Norms Pro";
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+tbody td a{
+    font-family: "TT Norms Pro";
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin:auto;
+    margin-right: auto;
+}
+tbody td a:hover{
+    color: green;
+    cursor: pointer;
+}
+tbody tr td{
+    color: white;
+    font-size: 20px;
+    
+}

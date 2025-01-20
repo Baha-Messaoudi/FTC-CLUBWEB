@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docume</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./image/lg.png" alt="" width="137.72px" height="78px"></a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Events</a></li>
+                    <li><a href="index.html">Member</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                    
+                </ul>
+                
+            </div>
+            <div id="conteneur" >
+            </div>
+        </nav>
+    </header>
+    <section class="join">
+        <h3 class="sub-titlee">JOIN OUR CREW</h3>
+        <p>On another level</p>
+        
+        <form action="form.php" method="POST">
+            <div class="box-felx">
+                <div class="part1">
+                    <div class="input-box">
+                            <span>Your Name</span>
+                            <input  type="text" id="urname" name="data[nom]" placeholder="Enter Your Name" required onblur="validateOnlyLetters()">
+                    </div>
+
+                    <div class="input-box">
+                            <span>Email</span>
+                            <input type="email" name="data[mail]" placeholder="Enter Your email" required>
+                    </div>
+
+                    <div class="input-box">
+                            <span>Your Phone number</span>
+                            <input type="text" name="data[phone]" placeholder="Enter Your Number" id="number" required>
+                    </div>
+
+                    <div class="input-box">
+                            <span>Your university</span>
+                            <input   type="text" id="urunv" name="data[college]" placeholder="Where did you study?" required onblur="validateOnlyLetterss()">
+                    </div>
+
+                    <div class="input-box">
+                            <span>Your skills</span>
+                            <textarea name="data[skills]" cols="30" rows="5"></textarea> 
+                    </div>
+                </div>
+                <div class="part2">
+                    <h5>Area Of Interest:</h5>    
+                    <div class="checkbox">
+                        <div class="classement"><span class="checky">INFORMATION TECHNOLOGY</span><input class="checky1" name="data[option][]" value="it" type="checkbox"></div>
+                        <div class="classement"><span class="checky">DEVLOPMENT</span><input class="checky1" name="data[option][]" value="dev" type="checkbox"></div>
+                        <div class="classement"><span class="checky">CULTURE</span><input class="checky1" name="data[option][]" value="culture" type="checkbox"></div>
+                        <div class="classement"><span class="checky">DESIGN</span><input class="checky1" name="data[option][]" value="design" type="checkbox"></div>
+                        <div class="classement"><span class="checky">SPORTS</span><input class="checky1" name="data[option][]" value="sport" type="checkbox"></div>
+                        <div class="classement"><span class="checky">MARKETING</span><input class="checky1" name="data[option][]" value="market" type="checkbox"></div>
+                    </div>
+                    <div class="input-box">
+                            <span>Your message</span>
+                            <textarea name="data[msg]" cols="30" rows="5"></textarea> 
+                    </div>
+                </div>
+            </div>
+            <div class="bttn03">
+                <input onclick="validate()"  type="submit" name="data[btn]" value="SEND REGESTRATION" class="btn3">
+            </div>
+        </form>
+    </section>
+    
+    <script src="./form.js"></script>
+</body>
+</html>

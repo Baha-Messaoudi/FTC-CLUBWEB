@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "TT Norms Pro";
+    font-style: normal;
+    src: local("TT Norms Pro"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff2") format("woff2"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.woff") format("woff"),
+        url("https://static.cookunity.com/cross/front-lib/fonts/tt-norms-pro-normal.ttf") format("truetype");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .2s linear;
+}
+html{
+    scroll-behavior:smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #5e95ed;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(28, 94, 237) ,rgb(1, 29, 90) ) ;
+    border-radius: 10px;
+}
+body{
+    background: #011325;
+}
+header{
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 40px;
+    background: #2596be;
+    box-shadow: 3px 5px 5px rgb(42, 109, 243);
+    border-bottom: 1.5px solid #0000ff;
+}
+
+nav .list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+nav .list a{
+    text-decoration: none;
+    color: rgb(249, 248, 248);
+    font-family: "TT Norms Pro";
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav .list a:hover{
+    color: #041c34;
+    border-bottom: .5px solid rgb(55, 114, 243);
+    letter-spacing: 0.3px;
+}
+.join{
+    display: block;
+    background: #011325;
+    height:100%;
+}
+
+.sub-titlee{
+    padding-top: 2%;
+    font-family: "TT Norms Pro";
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.join p{
+    font-family: "TT Norms Pro";
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #254253;
+    text-shadow: 0px 0px 1px white;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+form{
+    width: 70%;
+    height: auto;
+    box-shadow: 5px 5px 5px 5px #45444499;
+    border-radius: 6px;
+    background: rgba(126, 126, 126, 0.295);
+    padding: 1.5%;
+    margin: auto;
+    margin-right: auto;
+}
+
+form {
+    border-radius: 10px;
+    background: white;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+form::before{
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: -100;
+    background: linear-gradient(45deg, #071e26, #022b39, #044155, #002d80, #003699, #0048cc, #005aff, #0b2d39);
+  background-size: 400% 300%;
+  animation: glow 6s infinite linear;
+  border-radius: 3px;
+  padding: 5px;
+  -webkit-mask: 
+  linear-gradient(grey 0 0) content-box, 
+  linear-gradient(grey 0 0);
+-webkit-mask-composite: xor;
+}
+@keyframes glow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  form .box-felx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.part1{
+    margin-left: 3%;
+}
+
+
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 1% 0%;
+}
+form .input-box input{
+    width: 130%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+   border: none;
+   border-bottom: 1px solid #005aff;
+}
+
+form .input-box  span{
+    font-family: "TT Norms Pro";
+    font-size: 17px;
+    color: black;
+}
+textarea{
+    width: 120%;
+    background: #eee;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    text-align:justify ;
+    font-size: 15px;
+    resize: none;
+}
+textarea:focus{
+    border: 1.5px solid #34b0dc ;
+    transition: 0.5s;
+}
+.part2{
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+.part2 h5{
+    font-family: "TT Norms Pro";
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+.checkbox{
+    display: block;
+
+}
+
+.classement {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 4px;
+}
+.checky{
+    font-family: "TT Norms Pro";
+    font-size: 15px;
+}
+.checky1{
+    margin-left: 10px;
+    scale: 1.2;
+}
+form .bttn03 {
+    padding: 15px 0px 0px 0px;
+}
+form  .btn3{
+    width: 70%;
+    height: 30px;
+    padding: 3px 3px;
+    font-family: "TT Norms Pro";
+    text-align: center;
+    background: #049acd;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15%;
+    
+}
+.btn3:hover{
+    background-color: green;
+    scale: 1.003;
+    color: black;
+    font-weight:580 ;
+}
+
+
+@media only screen and (max-width:600px){
+    header{
+        position: sticky !important;
+    }
+    nav .list ul {
+        flex-direction: column;
+        position: absolute;
+        background: #2596be;
+        padding: 20px;
+        top: 105%;
+        right: -100%;
+        width: 150px;
+        border-radius: 5px;
+        transition: .8s;
+    }
+    nav .showlist{
+        right: 0% !important;
+    }
+    .join{ 
+        margin-right:12%;
+    }
+    .sub-titlee{
+        padding-top: 5% !important;
+    }
+    form{
+        width: 100% !important;
+    }
+    form .box-felx{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+    .part1{
+        margin-left: -10% !important;
+        padding: 25px !important;
+    }
+    form .input-box{
+        gap: 8px !important;
+    }
+    form .input-box input{
+        width: 90% !important;
+        padding: 15px !important;
+        margin-left: 2% !important;
+    }
+    form .input-box  span{
+        padding: 3px 15px !important;
+    }
+    textarea{
+        width: 100% !important;
+        margin-left: 4% !important;
+    }
+    .part2{
+        gap: 10px !important;
+        margin-left: 2% !important;
+    }
+    form .bttn03 {
+        padding: 15px 0px !important;
+    }
+    form  .btn3{
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 910px){
+    form{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    form .box-felx{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+    .part1{
+        margin-left: -10% !important;
+        padding: 15px !important;
+        width: 90% !important;
+    }
+    form .input-box{
+        gap: 8px !important;
+    }
+    form .input-box input{
+        width: 100% !important;
+    }
+    .part2{
+        margin-left: 10% !important;
+        padding: 15px !important;
+        align-items: center;
+        width: 100% !important;
+        gap: 10px !important;
+    }
+    .checkbox{
+        width: 100% !important;
+    }
+    .classement {
+        display: flex;
+        justify-content: space-between !important;;
+        padding: 4px;
+        width: 80% !important;
+    }
+    textarea{
+        width: 100% !important;
+    }
+    form .input-box textarea{
+        width: 100% !important;
+    }
+    form .input-box {
+        width: 100% !important;
+    }
+    form .bttn03 {
+        padding: 15px 0px !important;
+    }
+    form  .btn3{
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+}
+
+@media only screen and (max-width:1055px){
+    form{
+        width: 80% !important;
+        margin-left: 10% !important;
+    }
+    .classement {
+        display: flex;
+        justify-content: space-between !important;;
+        padding: 4px;
+        width: 90% !important;
+    }
+}
