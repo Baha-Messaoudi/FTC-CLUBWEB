@@ -1087,9 +1087,11 @@ footer .s-media{
     }
     section .NEXT {
         right: 9%;
+        visibility: hidden;
     }
     section .BACK{
         left: 7%;
+        visibility: hidden;
     }
      /*----------------about-------------*/
      .about{
@@ -1106,12 +1108,10 @@ footer .s-media{
     }
     .NEXT1 {
         top: 37% !important;
-        visibility: hidden;
     }
     
     .BACK1 {
         top: 37% !important;
-        visibility: hidden;
     }
     section .qst1,.qst2,.qst3,.qst4{
         font-size: 20px !important;
