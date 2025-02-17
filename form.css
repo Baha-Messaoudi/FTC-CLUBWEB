@@ -25,6 +25,10 @@ html{
     background:linear-gradient(rgb(28, 94, 237) ,rgb(1, 29, 90) ) ;
     border-radius: 10px;
 }
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+}
 body{
     background: #011325;
 }
@@ -43,6 +47,7 @@ nav{
     background: #2596be;
     box-shadow: 3px 5px 5px rgb(42, 109, 243);
     border-bottom: 1.5px solid #0000ff;
+    
 }
 
 nav .list ul{
@@ -301,7 +306,7 @@ form  .btn3{
         margin-left: 4% !important;
     }
     .part2{
-        gap: 10px !important;
+        gap: 19px !important;
         margin-left: 2% !important;
     }
     form .bttn03 {
