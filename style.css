@@ -1087,11 +1087,11 @@ footer .s-media{
     }
     section .NEXT {
         right: 9%;
-        visibility: hidden;
+        visibility: hidden !important;
     }
     section .BACK{
         left: 7%;
-        visibility: hidden;
+        visibility:  hidden !important;
     }
      /*----------------about-------------*/
      .about{
