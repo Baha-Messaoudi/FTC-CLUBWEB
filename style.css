@@ -1106,10 +1106,12 @@ footer .s-media{
     }
     .NEXT1 {
         top: 37% !important;
+        visibility: hidden;
     }
     
     .BACK1 {
         top: 37% !important;
+        visibility: hidden;
     }
     section .qst1,.qst2,.qst3,.qst4{
         font-size: 20px !important;
