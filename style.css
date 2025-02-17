@@ -25,7 +25,10 @@ html{
     background:linear-gradient(rgb(28, 94, 237) ,rgb(1, 29, 90) ) ;
     border-radius: 10px;
 }
-
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+}
 header{
     display: block;
     position: sticky;
