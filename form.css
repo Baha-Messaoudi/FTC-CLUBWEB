@@ -25,10 +25,6 @@ html{
     background:linear-gradient(rgb(28, 94, 237) ,rgb(1, 29, 90) ) ;
     border-radius: 10px;
 }
-html,body{
-    overflow-x: hidden;
-    width: 100%;
-}
 body{
     background: #011325;
 }
@@ -47,7 +43,6 @@ nav{
     background: #2596be;
     box-shadow: 3px 5px 5px rgb(42, 109, 243);
     border-bottom: 1.5px solid #0000ff;
-    
 }
 
 nav .list ul{
@@ -95,11 +90,17 @@ nav .list a:hover{
     padding: 10px;
 }
 form{
-    width: 100%;
+    width: 70%;
     height: auto;
     box-shadow: 5px 5px 5px 5px #45444499;
     border-radius: 6px;
+    background: rgba(126, 126, 126, 0.295);
     padding: 1.5%;
+    margin: auto;
+    margin-right: auto;
+}
+
+form {
     border-radius: 10px;
     background: white;
     margin: 15px auto;
@@ -107,7 +108,6 @@ form{
     overflow: hidden;
     z-index: 1; 
 }
-
 
 form::before{
     border-radius: 10px;
@@ -172,7 +172,7 @@ form .input-box  span{
     font-size: 17px;
     color: black;
 }
-textarea{
+ textarea{
     width: 120%;
     background: #eee;
     border: none;
@@ -237,152 +237,4 @@ form  .btn3{
     border: none;
     margin-left: 15%;
     
-}
-.btn3:hover{
-    background-color: green;
-    scale: 1.003;
-    color: black;
-    font-weight:580 ;
-}
-
-
-@media only screen and (max-width:600px){
-    header{
-        position: sticky !important;
-    }
-    nav .list ul {
-        flex-direction: column;
-        position: absolute;
-        background: #2596be;
-        padding: 20px;
-        top: 105%;
-        right: -100%;
-        width: 150px;
-        border-radius: 5px;
-        transition: .8s;
-    }
-    nav .showlist{
-        right: 0% !important;
-    }
-    .join{ 
-        margin-right:12%;
-    }
-    .sub-titlee{
-        padding-top: 5% !important;
-    }
-    .form{
-        width: 117%;
-
-        
-    }
-    form{
-        width: 50% !important;
-    }
-    form .box-felx{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column !important;
-        gap: 10px !important;
-        width: 100% !important;
-    }
-    .part1{
-        margin-left: -10% !important;
-        padding: 25px !important;
-    }
-    form .input-box{
-        gap: 8px !important;
-    }
-    form .input-box input{
-        width: 90% !important;
-        padding: 15px !important;
-        margin-left: 2% !important;
-    }
-    form .input-box  span{
-        padding: 3px 15px !important;
-    }
-    textarea{
-        width: 100% !important;
-        margin-left: 4% !important;
-    }
-    .part2{
-        gap: 19px !important;
-        margin-left: 2% !important;
-    }
-    form .bttn03 {
-        padding: 15px 0px !important;
-    }
-    form  .btn3{
-        width: 90% !important;
-        margin-left: 5% !important;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 910px){
-    form{
-        width: 80% !important;
-        margin-left: 10% !important;
-    }
-    form .box-felx{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-direction: column !important;
-        gap: 10px !important;
-    }
-    .part1{
-        margin-left: -10% !important;
-        padding: 15px !important;
-        width: 90% !important;
-    }
-    form .input-box{
-        gap: 8px !important;
-    }
-    form .input-box input{
-        width: 100% !important;
-    }
-    .part2{
-        margin-left: 10% !important;
-        padding: 15px !important;
-        align-items: center;
-        width: 100% !important;
-        gap: 10px !important;
-    }
-    .checkbox{
-        width: 100% !important;
-    }
-    .classement {
-        display: flex;
-        justify-content: space-between !important;;
-        padding: 4px;
-        width: 80% !important;
-    }
-    textarea{
-        width: 100% !important;
-    }
-    form .input-box textarea{
-        width: 100% !important;
-    }
-    form .input-box {
-        width: 100% !important;
-    }
-    form .bttn03 {
-        padding: 15px 0px !important;
-    }
-    form  .btn3{
-        width: 90% !important;
-        margin-left: 5% !important;
-    }
-}
-
-@media only screen and (max-width:1055px){
-    form{
-        width: 80% !important;
-        margin-left: 10% !important;
-    }
-    .classement {
-        display: flex;
-        justify-content: space-between !important;;
-        padding: 4px;
-        width: 90% !important;
-    }
 }
